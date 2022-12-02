@@ -161,6 +161,12 @@
 
 /* End coupon */
 
+/* Geo Location */
+
+
+
+/* End Location */
+
 /* navbar */
 .navbar {
     background-color: #1a232e;
@@ -298,9 +304,5 @@
     line-height: 50px;
     opacity: 0.7;
 }
-
-
-
-
 
 

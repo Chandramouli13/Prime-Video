@@ -37,8 +37,20 @@
                   <a class="nav-link" href="#">Movies</a>
                 </li>
               </ul>
+              <!-- Geo location -->
+              <button onclick="geolocation()" style="font-size: 18px;">
+                <i class="bi bi-geo-alt-fill" style="color:#00a8e1;"></i>
+                <span id="out" style="font-weight: bold;"><i class="bi bi-buildings-fill" style="color: brown;"></i></span>
+                <span id="weather" style="font-weight: bolder;"></span>
+                <i class="bi bi-cloud-sun-fill" style="color: orangered;"></i>
+              </button>
+              <br/>
+              <!-- end location -->
               <!-- Dark/Light theme mode -->
-              <button class="icon ms-3" onclick="changeMode()"><i class="bi bi-brightness-high-fill"></i></button>
+              <div>
+                <button class="icon ms-3" onclick="changeMode()"><i id="icon" class="bi bi-brightness-high-fill" onclick="change()"></i></button>
+              </div>
+              <!-- end mode -->
               <form class="d-flex mx-5">
                 <input class="form-control bg-dark text-white d-none" type="search" placeholder="Search" aria-label="Search">
                 <!-- <button class="btn" type="submit"> -->
@@ -558,7 +570,7 @@
         <!-- coupon code-->
         <div class="coupon">
           <div id="coupon">
-            <button onclick="closeCoupon()" class="">&times;</button>
+            <button onclick="closeCoupon()">&times;</button>
             <a href="https://www.amazon.in/" target="_blank">
               <img src="images/coupon-img.jpg" alt="coupon" class="img-thumbnail">
             </a>
